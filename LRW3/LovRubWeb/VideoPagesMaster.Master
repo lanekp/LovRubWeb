@@ -1,0 +1,74 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="VideoPagesMaster.Master.cs" Inherits="LovRubWeb.siteBase" %>
+<%@ Register Src="~/Controls/WebParts/Polaroids.ascx" TagName="Polaroids" TagPrefix="uc2" %>
+<%@ Register Src="~/Controls/WebParts/Footer.ascx" TagName="Footer" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>LovRub Sexual Enhancement Gel with Aloe Vera</title>
+	<!-- <link href="~/styles/global.css" type="text/css" media="screen" rel="stylesheet" /> -->
+	<!--[if IE]>
+        <link href="/styles/IE.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <script type="text/javascript" src="/js/swfobject.js"></script>
+
+    <!-- Facebook -->
+    <meta property="og:title" content="LovRub.comSportsVideo" />
+    <meta property="og:description" content="UnFunny LovRub Ad" />
+    <meta property="og:image" content="http://www.lovrub.com/videos/Sports_Thumbnail.jpg" />     
+    <meta property="og:video" content="application/x-shockwave-flash"/>    
+    <!-- Facebook -->
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+    <div class="sticker"></div>
+	<div class="masterwrapper">
+        <asp:ContentPlaceHolder ID="cphMastHead" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="cphMainMenu" runat="server">
+        </asp:ContentPlaceHolder>
+		<div class="wrapperheader">
+			<div class="wrapperfooter">
+                <asp:ContentPlaceHolder ID="cphPolaroid" runat="server">
+                </asp:ContentPlaceHolder>
+                <uc2:Polaroids id="Polaroids1" runat="server">
+                </uc2:Polaroids>
+                <div class="leftcol">
+                    
+					
+                    <asp:ContentPlaceHolder ID="cphSubMenu" runat="server">
+                    </asp:ContentPlaceHolder>
+				</div>
+                <asp:ContentPlaceHolder ID="cphContent" runat="server">
+                </asp:ContentPlaceHolder>
+				
+				<%--<div class="rightcol lgphoto" style="background-image: url(images/prod01-large.jpg); height: 499px;">
+
+				</div>--%>
+				
+			</div>
+		</div>
+	</div>
+	<div class="footerwrapper">
+		<uc1:Footer id="Footer1" runat="server"></uc1:Footer>
+	</div>
+    </form>
+    
+<!-- KPL New version of tracking code. -->
+ <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-2336097-2");
+    pageTracker._initData();
+    pageTracker._trackPageview();   
+</script>
+<!-- KPL End New version of tracking code. --> 
+
+   
+</body>
+</html>

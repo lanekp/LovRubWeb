@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 Transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+</head>
+<body>
+
+
+
+<table width="600" cellpadding="0" cellspacing="0" >
+            <tr>
+                <td colspan=2 style='height:20;background-color:whitesmoke;border:1px solid #cccccc;font-size:14px;padding:10px'><b>Order Number " + this.OrderNumber + "</b></td>
+            </tr>
+            <tr>
+                <td colspan=2 style='padding:10px'>
+                    <font color=#990000>
+                        <b>Status:</b>
+                        "Utility.ParseCamelToProper(Enum.GetName(typeof(OrderStatus), this.OrderStatus)"
+                    </font><br/>
+                    "sb.Append(<b>Date:</b>  + this.OrderDate.ToShortDateString() + "<br/><br/>
+                </td>
+            </tr>
+           
+             <tr>
+                <td colspan=2><font size=2>&nbsp;&nbsp;<b>Payment Information</b></font></td>
+             </tr>
+             <tr>
+                <td colspan=2 style='border-top:1px solid #cccccc'>&nbsp;</td>
+             </tr>
+             <tr>
+                <td colspan=2 style='padding:10px'>
+                    <b>Transaction Number:</b> " + this.Transactions[0].AuthorizationCode + "<br>
+                <b>Payment Method:</b> " + this.Transactions[0].TransactionType.ToString() + "<br><br><br><br></td></tr>
+                
+             <tr>
+                <td colspan=2>&nbsp;&nbsp;<font size=2><b>Shipping And Billing</b></font></td>
+             </tr>
+             <tr>
+                <td colspan=2 style='border-top:1px solid #cccccc'>&nbsp;</td>
+             </tr>
+             <tr>
+                <td width=50% style='padding:10px' valign=top><b>Bill To:</b><br>" + this.BillToAddress + "</td><td style='padding:10px' valign=top><b>Ship To:</b><br>" + this.ShipToAddress.ToString() + "<br><br><br><br></td>
+             </tr>
+             <tr>
+                <td colspan=2>&nbsp;&nbsp;<font size=2><b>Order Items</b></font></td>
+             </tr>
+             <tr>
+                <td colspan=2 style='border-top:1px solid #cccccc'>&nbsp;</td>
+             </tr>
+             <tr>
+                <td colspan=2 style='padding:10px'>" + this.ItemsToString(true) + "</td>
+             </tr>
+</table>
+
+
+<TABLE style="BORDER-RIGHT: gainsboro 1px solid; BORDER-TOP: gainsboro 1px solid; BORDER-LEFT: gainsboro 1px solid; BORDER-BOTTOM: gainsboro 1px solid" width="75%" align=center>
+<TBODY>
+<TR>
+<TD height=50></TD></TR>
+<TR>
+<TD style="HEIGHT: 50px" vAlign=top>
+<P><STRONG>Thank you for your recent order #NAME#!</STRONG></P>
+<P>We appreciate your business. We will ship your order as quickly as possible.<BR><BR></P></TD></TR>
+<TR>
+<TD bgColor=lightsteelblue><B>Order Information</B></TD></TR>
+<TR>
+<TD>#ORDER# </TD></TR>
+<TR>
+<TD>
+<P>If you have any questions about your order, you can&nbsp;reply to this email or&nbsp;email us at #STOREEMAIL#. <BR><BR>Thanks again for shopping with us! </P></TD></TR>
+<TR>
+<TD>"<B>#TAGLINE#</B>"</TD></TR></TBODY></TABLE>
+
+
+<table style="BORDER-RIGHT: gainsboro 1px solid; BORDER-TOP: gainsboro 1px solid; BORDER-LEFT: gainsboro 1px solid; BORDER-BOTTOM: gainsboro 1px solid" width="75%" align="center">
+    <tbody>
+        <tr>
+            <td height=50>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="HEIGHT: 50px" valign=top><strong>The following order has been received:<BR><BR></strong></td>
+        </tr>
+        <tr>
+            <td bgcolor="lightsteelblue"><B>Order Information</B></td>
+        </tr>
+        <tr>
+            <td>#ORDER# </td>
+        </tr>
+        <tr>
+            <td>"<B>#TAGLINE#</B>"</td>
+        </tr>
+    </tbody>
+</table>
+
+<table  width="733" bgcolor="black" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td valign="middle" align="center" style="height: 114px">
+            <a href="http://www.rapidssl.com" target="_blank">
+                <img src="images/rapidssl_ssl_certificate.gif" align="absmiddle" alt="Official RapidSSL Seal"/>
+            </a>
+        </td>                
+        <td  valign="middle" align="center" style="height: 114px"><img src="images/CreditCards.gif" alt=""/></td>
+        <td  valign="middle" align="center" style="height: 114px">
+            <div class="AuthorizeNetSeal"> 
+                <script type="text/javascript" language="javascript">
+                    var ANS_customer_id="eeb314ba-c23a-48e3-8e45-32bd3b3a794c";
+                </script> 
+                <script type="text/javascript" language="javascript" src="//VERIFY.AUTHORIZE.NET/anetseal/seal.js" >
+                    function Img3_onclick() { }
+                </script>
+                <a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">Credit Card Processing</a> 
+            </div> 
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

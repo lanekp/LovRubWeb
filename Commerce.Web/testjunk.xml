@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<UDOARequest version="2.00">
+  <UDIParameter>
+    <Parameter key="HTTPBizID">jRfJIJtOgVGWQpJNyPVJhqvwNndjkjkTNuVXUhlScTEueBSeLvaFgjVVgSjQuuBQuPHhgKBYcQTnmEMhfFhwkaJAmExnCdhrvrVolebsqlQqtxmMhPfiDXMFieRpojHVYOgjNHUwgPUpeltQwAUdGQZwdgwLqNkFbxuhneNuiVuhIggLFpEybMjqfLRfoKQQiiAyENJDdbXiaKeOHPJXFNADyQnBVcfOYgMOjvAfXYNKYqjhKrDhRVIrmQnCLil</Parameter>
+    <Parameter key="Keycode">CALLCENTER</Parameter>
+    <Parameter key="VerifyFlag">False</Parameter>
+    <Parameter key="QueueFlag">True</Parameter>
+  </UDIParameter>
+  <Header>
+    <OriginType>3</OriginType>
+    <OrderID>HRCK-CC-WIMQ8512WI</OrderID>
+    <StoreCode/>
+  </Header>
+  <Customer>
+    <Address type="BillTo">
+      <TitleCode>0</TitleCode>
+      <Company/>
+      <Firstname>Kevin</Firstname>
+      <Lastname>Lane</Lastname>
+      <Address1>3 paddock lane</Address1>
+      <Address2></Address2>
+      <City>suffern</City>
+      <State>NY</State>
+      <ZIP>10952</ZIP>
+      <TLD>US</TLD>
+      <PhoneNumber/>
+      <Email>lanekp@yahoo.com</Email>
+    </Address>
+    <FlagData>
+      <Flag name="DoNotMail">True</Flag>
+      <Flag name="DoNotCall">True</Flag>
+      <Flag name="DoNotEmail">True</Flag>
+    </FlagData>
+  </Customer>
+  <ShippingInformation>
+    <Address type="ShipTo">
+      <TitleCode>0</TitleCode>
+      <Firstname>Kevin</Firstname>
+      <Lastname>Lane</Lastname>
+      <Address1>3 paddock lane</Address1>
+      <Address2></Address2>
+      <City>suffern</City>
+      <State>NY</State>
+      <ZIP>10952</ZIP>
+      <TLD>US</TLD>
+    </Address>
+    <MethodCode>2</MethodCode>
+    <ShippingAmount>6.60</ShippingAmount>
+    <HandlingAmount>0.0</HandlingAmount>
+    <SpecialInstructions></SpecialInstructions>
+  </ShippingInformation>
+  <Payment type="1">
+    <CardNumber>4111111111111111</CardNumber>
+    <CardVerification>027</CardVerification>
+    <CardExpDateMonth>2</CardExpDateMonth>
+    <CardExpDateYear>2008</CardExpDateYear>
+    <CardStatus>11</CardStatus>
+    <CardAuthCode>000000</CardAuthCode>
+  </Payment>
+  <OrderDetail>
+    <LineItem lineNumber="1">
+      <ItemCode>LRM1</ItemCode>
+      <Quantity>1</Quantity>
+      <UnitPrice>19.95</UnitPrice>
+    </LineItem>
+    <LineItem lineNumber="2">
+      <ItemCode>LRM1</ItemCode>
+      <Quantity>1</Quantity>
+      <UnitPrice>0.0</UnitPrice>
+    </LineItem>
+    <LineItem lineNumber="3">
+      <ItemCode>LRW1</ItemCode>
+      <Quantity>2</Quantity>
+      <UnitPrice>19.95</UnitPrice>
+    </LineItem>
+  </OrderDetail>
+  <Check>
+    <TotalAmount>71.4600</TotalAmount>
+  </Check>
+</UDOARequest>

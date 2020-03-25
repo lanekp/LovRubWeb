@@ -1,0 +1,25 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CCmaster.cs" Inherits="CCMasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+  <title>LovRub Sexual Enhancement Gel with Aloe Vera</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link id="Link1" rel="stylesheet" type="text/css" href='~/js/modal/subModal.css'
+    runat="server" />
+  <meta name="description" content="Sexual Enhancement Gel with Aloe Vera for Men and Women" />
+  <meta name="keywords" content="Keywords here" />
+    
+</head>
+<body>
+
+
+<form id="elForm" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" /> 
+
+    <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+    </asp:contentplaceholder>
+</form>
+
+</body>
+</html>

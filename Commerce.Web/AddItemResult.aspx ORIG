@@ -1,0 +1,123 @@
+<%@ Page Language="C#" MasterPageFile="~/site.master" AutoEventWireup="true" CodeFile="AddItemResult.aspx.cs" Inherits="AddItemResult" Title="Item Added" %>
+
+<%@ Register Src="Modules/Products/ProductSummaryDisplay.ascx" TagName="ProductSummaryDisplay"
+    TagPrefix="uc6" %>
+
+<%@ Register Src="Modules/Content/Paragraph.ascx" TagName="Paragraph" TagPrefix="uc5" %>
+<%@ Register Src="Modules/AdContainer.ascx" TagName="AdContainer" TagPrefix="uc4" %>
+
+<%@ Register Src="Modules/MiniCart.ascx" TagName="MiniCart" TagPrefix="uc1" %>
+<%@ Register Src="Modules/CatalogList.ascx" TagName="CatalogList" TagPrefix="uc2" %>
+<%@ Register Src="Modules/RecentCategories.ascx" TagName="RecentCategories" TagPrefix="uc2" %>
+<%@ Register Src="Modules/RecentProductsViewed.ascx" TagName="RecentProductsViewed" TagPrefix="uc3" %>
+
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <!-- 
+    <div id="leftcontent">
+            <%if (RecentCategories1.GetCount() > 0 && RecentProductsViewed1.GetCount() > 0)  { %>
+            <uc3:RecentProductsViewed ID="RecentProductsViewed1" runat="server" />
+            <uc2:RecentCategories ID="RecentCategories1" runat="server" />
+            <%} %>
+            <uc2:CatalogList ID="CatalogList1" runat="server" />
+        <br />
+
+    </div>
+    -->
+<div id="centercontent">
+    <%
+        if (drLastAdded != null)
+        {
+    %>
+    <h4>Just Added to
+        your cart:</h4>
+    <table>
+        <tr>
+            <td>
+            <asp:Image ID="imgJustAdded" runat="server" />
+            </td>
+            <td>
+                <h5><asp:Label ID="lblJustAddedName" runat="server"></asp:Label></h5>
+                <div>Retail Price: <asp:Label ID="lblJustAddedRetail" runat="server" CssClass="RetailPrice"></asp:Label></div>
+                <span><b>Our Price: </b></span><asp:Label ID="lblJustAddedOurPrice" runat="server" CssClass="ourprice"></asp:Label>
+                <div>Quantity: <asp:Label ID="lblJustAddedQuantity" runat="server"></asp:Label></div>
+                <asp:Label ID="lblSelectedAtts" runat="server" Text='<%#Eval("attributes") %>'></asp:Label>
+                <div>Total: <b><asp:Label ID="lblJustAddedLineTotal" runat="server"></asp:Label></b></div>
+          </td>
+        </tr>
+
+    </table>
+    <%
+        }else{
+    %>
+        <h4>Your cart is empty</h4>
+
+    <%
+        }
+    %>
+    <br />
+    <asp:Panel ID="pnlCross" runat="server">
+    <div  class="productsection">
+    <h4>You might also be interested in...</h4>
+    <br />
+    <asp:DataList ID="dtCrossProducts" runat="server"  RepeatColumns="3" RepeatDirection="Horizontal" OnItemCommand="lnkAddCross" RepeatLayout="Table">
+        <ItemTemplate>
+        <uc6:ProductSummaryDisplay ID="ProductSummaryDisplay1" runat="server" 
+        ProductID='<%#Eval("crossProductID")%>'
+        ProductName='<%#Eval("ProductName")%>'
+        RetailPrice='<%#Eval("RetailPrice")%>'
+        OurPrice='<%#Eval("OurPrice")%>'
+        ImageFile='<%#Eval("DefaultImage")%>'
+        Rating='<%#Eval("Rating")%>'
+        ProductGUID='<%#Eval("ProductGUID")%>'
+       />
+        <asp:Label ID="lblProductID" runat="server" Text='<%#Eval("productID")%>' Visible="false"></asp:Label>
+       </ItemTemplate>
+
+    </asp:DataList>
+    <br />
+    </div>
+    </asp:Panel>
+    <asp:Panel ID="pnlRecent" runat="server">
+
+    <div  class="productsection">
+    <h4>Recently Viewed Items</h4>
+    <asp:DataList ID="dtRecent" runat="server"  RepeatColumns="3" RepeatDirection="Horizontal" OnItemCommand="lnkAddRecent">
+        <ItemTemplate>
+        <uc6:ProductSummaryDisplay ID="ProductSummaryDisplay1" runat="server" 
+        ProductID='<%#Eval("ProductID")%>'
+        ProductName='<%#Eval("ProductName")%>'
+        ShippingEstimate='<%#Eval("ShippingEstimate")%>'
+        RetailPrice='<%#Eval("RetailPrice")%>'
+        OurPrice='<%#Eval("OurPrice")%>'
+        ImageFile='<%#Eval("defaultImage")%>'
+        Rating='<%#Eval("Rating")%>'
+        ProductGUID='<%#Eval("ProductGUID")%>'
+       />
+        </ItemTemplate>
+
+
+    </asp:DataList>
+    </div>
+   </asp:Panel>
+</div>
+
+<div id="rightcontent">
+        <div class="coreboxtop"></div>
+        <div class="coreboxheader"><a href="basket.aspx">Your Cart</a></div>
+        <div class="coreboxbody">
+            <div class="tenpixspacer"></div>
+            <asp:Hyperlink ID="lnkCheckoutTop" runat="server" SkinID="Checkout" NavigateUrl="~/basket.aspx"></asp:Hyperlink>
+             <div class="tenpixspacer"></div>
+            <uc1:MiniCart id="MiniCart1" runat="server">
+            </uc1:MiniCart>
+            <div class="tenpixspacer"></div>
+            <asp:Hyperlink ID="lnkCheckout" runat="server" SkinID="Checkout" NavigateUrl="~/basket.aspx"></asp:Hyperlink>
+
+
+        </div>
+        <div class="coreboxbottom"></div>
+</div>    
+</asp:Content>
+

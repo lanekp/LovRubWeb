@@ -1,0 +1,40 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="scheckout.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>LovRub Sexual Enhancement Gel with Aloe Vera</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link id="Link1" rel="stylesheet" type="text/css" href='~/js/modal/subModal.css'
+    runat="server" />
+  <link rel="stylesheet" type="text/css" href="Checkout.css" /> <!-- KPL 11/24/07 -->
+
+  <meta name="description" content="LovRub Sexual Enhancement Gel with Aloe Vera for Men and Women" />
+  <meta name="keywords" content="sexual enhancement cream, sexual lubricants, sex cream, personal lubricant" />
+  <meta name="keywords" content="clit stimulation, clit lubricant" />
+  <meta name="keywords" content="Vagina lubricant, Vagina lube, Vagina lubrication, vagina gel" />
+  
+</head>
+<body>
+
+<form id="elForm" runat="server">
+    <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+    </asp:contentplaceholder>
+</form>
+
+<!-- New version of tracking code. Added 04/29/08 -->
+ <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-2336097-2");
+    pageTracker._initData();
+    pageTracker._trackPageview();   
+</script>
+<!-- End New version of tracking code. Added 04/29/08 -->
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>images/CouplePhoto4.gif</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <AlternateText></AlternateText>
+    <Keyword></Keyword>
+    <Impressions>80</Impressions>
+  </Ad>
+
+<Ad>
+  <ImageUrl>images/CouplePhoto5.gif</ImageUrl>
+  <NavigateUrl></NavigateUrl>
+  <AlternateText></AlternateText>
+  <Keyword></Keyword>
+  <Impressions>80</Impressions>
+</Ad>
+  
+<Ad>
+  <ImageUrl>images/CouplePhoto6.gif</ImageUrl>
+  <NavigateUrl></NavigateUrl>
+  <AlternateText></AlternateText>
+  <Keyword></Keyword>
+  <Impressions>80</Impressions>
+</Ad>
+</Advertisements>
+

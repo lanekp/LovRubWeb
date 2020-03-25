@@ -1,0 +1,57 @@
+<%@ Page Language="C#" MasterPageFile="~/siteBase.Master" AutoEventWireup="true" CodeFile="Seasonal.aspx.cs" Inherits="LovRubWeb.Products.Seasonal" Title="LovRub - Seasonal Products" %>
+<%@ Register Src="../Controls/WebParts/MastHead.ascx" TagName="MastHead" TagPrefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="cphMastHead" runat="server">
+    <uc1:MastHead ID="MastHead1" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphMainMenu" runat="server">
+    <ul class="mm">
+            <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/TeriTalk.aspx">Teri Talk</asp:HyperLink></li>
+			<li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Testimonials.aspx">Testimonials</asp:HyperLink></li>
+			<li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink></li>
+			<li class="active"><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Products/Default.aspx">Products</asp:HyperLink></li>
+			<li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Videos/Default.aspx">Videos</asp:HyperLink></li>
+			<li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink></li>
+			<li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/HottestNews.aspx">Hottest News</asp:HyperLink></li>
+	</ul>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphPolaroid" runat="server">
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphSubMenu" runat="server">
+    <ul class="submenu">
+		
+		<li class="large">Sexual enhancement gels
+			<ul>
+                <li><asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/Products/His.aspx">male</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/Products/Hers.aspx">female</asp:HyperLink></li>				
+			</ul></li>
+		<li><asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/Products/BodyMassage.aspx">Body massage gel</asp:HyperLink></li>
+		<li><asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/Products/Apparel.aspx">Apparel</asp:HyperLink></li>
+		<li class="active"><asp:HyperLink ID="HyperLink15" runat="server" NavigateUrl="~/Products/Valentine.aspx">Valentine's Day Gifts</asp:HyperLink></li>
+
+	</ul>
+    <ul class="pinnedsubmenu">
+        <li><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/HowItWorks.aspx">How it works</asp:HyperLink></li>	
+        <li><asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/FAQ.aspx">Frequently asked questions</asp:HyperLink></li>	
+        <li><asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/Ingredients.aspx">Ingredients</asp:HyperLink></li>	        		
+	</ul>
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="cphContent" runat="server">
+    <div class="rightcol lgphoto" style="background-image: url(../images/christmas-bg.jpg); height: 499px;">
+		<div class="fancyproductinfo">
+			<h1>LovRub&trade; Holiday Stocking<em>Sexual Enhancement Gel</em></h1>
+			<p>Start a warm and pleasurable new holiday tradition with the LuvRub Holiday Stocking, featuring one tube each for you and your special someone. At this price, it's the ultimate adult stocking stuffer.</p>
+			<p class="firstprice">$29.99</p>
+
+			<p class="saleprice"><strong>$19.99</strong>First Tube</p>
+			<p class="saleprice"><strong>$9.99</strong>Second Tube</p>
+			<div class="fancyinputwrapper">
+                <label>Quantity:<br/>
+                    <asp:TextBox ID="txtQty" CssClass="fobj" style="width: 25px;" maxlength="2" Text="1" runat="server"></asp:TextBox>
+                </label>
+                <input type="button" value="add to cart" class="fobjbutton"/>
+				
+			</div>
+
+		</div>
+	</div>
+</asp:Content>

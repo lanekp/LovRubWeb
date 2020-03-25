@@ -1,0 +1,28 @@
+User-agent: *
+
+Allow: /
+Allow: /Products
+Allow: /Videos
+
+Sitemap: http:/www.LovRub.com/LovRubSiteMap3.xml
+
+Disallow: /admin/
+Disallow: /turn
+Disallow: /styles
+Disallow: /Properties
+Disallow: /Products
+Disallow: /PayPal
+Disallow: /Modules
+Disallow: /Members
+Disallow: /js
+Disallow: /images
+Disallow: /Dependencies
+Disallow: /Controls
+Disallow: /Bin
+Disallow: /aspnet_client
+Disallow: /App_WebReferences
+Disallow: /App_Themes
+Disallow: /App_GlobalResources
+Disallow: /App_Data
+Disallow: /_Dev
+

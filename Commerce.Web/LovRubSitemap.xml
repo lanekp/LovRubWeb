@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84 http://www.google.com/schemas/sitemap/0.84/sitemap.xsd" xmlns="http://www.google.com/schemas/sitemap/0.84">
+  <url>
+    <loc>www.lovrub.com/default.aspx</loc>
+  </url>
+  <url>
+    <loc>www.lovrub.com/LRProducts2.aspx</loc>
+  </url>
+  <url>
+    <loc>www.lovrub.com/faq.aspx</loc>
+  </url>
+  <url>
+    <loc>www.lovrub.com/reviews.aspx</loc>
+  </url>
+  <url>
+    <loc>www.lovrub.com/HowItWorks.aspx</loc>
+  </url>
+  <url>
+    <loc>www.lovrub.com/about.htm</loc>
+  </url>
+  <url>
+    <loc>www.lovrub.com/LRFemaleProduct.aspx</loc>
+  </url>
+  <url>
+    <loc>www.lovrub.com/LRMaleProduct.aspx</loc>
+  </url>
+
+</urlset>

@@ -1,0 +1,37 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+namespace LovRubWeb.Controls.WebParts
+{
+    public partial class Polaroids : System.Web.UI.UserControl
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<string> imgs = new List<string>();
+            //imgs.Add("pic01.png");
+            //imgs.Add("pic02.png");
+            //imgs.Add("pic03.png");
+            //imgs.Add("pic04.png");
+            //imgs.Add("pic05.png");
+            //imgs.Add("pic06.png");
+            imgs.Add("small_1.gif");
+            imgs.Add("small_2.gif");
+            imgs.Add("small_3.gif");
+
+            Random r = new Random();
+
+            int result = r.Next(0, imgs.Count - 1);
+
+            imgPolaroid.ImageUrl = string.Format("~/images/{0}", imgs[result]);
+        }
+    }
+}

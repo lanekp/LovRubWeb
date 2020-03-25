@@ -1,0 +1,55 @@
+Release Notes - dashCommerce 2.2.0 - 9/30/2007
+Compiled By: Chris Cyvas - Mettle Systems LLC
+http://www.dashcommerce.org
+
+1.)  Support for the PayPal API Signature is added to the PayPal Payment Provider.
+2.)  PayPal integration is now a PayPal Certified Integration.
+3.)  New installer checkes for appropriate write access to the web.config.
+4.)  New installer that allows you to choose to load sample data.
+5.)  New installer allows you to drop all dashCommerce database objects to allow for clean installs
+     to that database after an initial tryout period.
+6.)  New installer allows for the creation of the Adminsitrator account.
+7.)  System Mailers are identified with a new "isSystemMailer" field in the CSK_Messaging_Mailers table.
+8.)  Mailers for Refund, Shipping, and Order Cancellation are added to the code.
+9.)  Text based mailers removed - all mailers are database driven.
+10.) Added "MACROS" to the Mailers that will be replaced at runtime. Added MACRO list to the UI for 
+     ease of use.
+11.) Added Mail Configuration to the Site Adminsitration to reduce manual web.config editing.
+12.) Updated StrikeIron WSDL.
+13.) Cleaned database of unused stored procedures and tables:
+     A.) Stored Procedures:
+         CSK_Content_Insert
+         CSK_Content_Get
+         CSK_Content_Save
+         CSK_Content_Update
+         CSK_Store_CategoryGetActive
+         CSK_Coupons_GetAllCouponTypes
+         CSK_Tax_SaveZipRate
+         CSK_Tax_CalculateAmountByZip
+         CSK_Tax_CalculateAmountByState
+         CSK_Promos_AddProduct
+         CSK_Store_Config_GetList
+         CSK_Store_Product_GetByCategoryName
+     B.) Tables
+         CSK_Store_Config
+14.) Added My Account page that allows for:
+     A.) Password Update
+     B.) Email Address Update
+     C.) Securoty Question Update
+     D.) Address Book Add/Update
+15.) Cleaned Database scripts of COLLATE statements that were causing problems in the installer.
+16.) Reviewd stock data that was being populated to reduce the amount of non-necessary or bad data.
+17.) Support for certificates is removed from the PayPal Payment Provider.
+18.) Bug Fix: 10941 - Database Collation
+19.) Bug Fix: 10572 - PayPal Helper CurrencyCode Bug
+20.) Bug Fix: 12429 - AMEX Card Issue
+21.) Bug Fix / Feature: 6601 - PayPal Signature Support
+22.) Bug Fix: 6383 - ImagePicker Web Control Access
+23.) Bug Fix: 12605 - Error When Last Product Cateogry Deleted.
+24.) Updated PayPal WSDL
+25.) Cleaned Solution of BETA or incomplete code, unused images, files, etc.
+26.) Added build number to footer
+27.) Added ReleaseNotes.txt to solution.
+28.) Added ReadMe.txt to solution.
+29.) Released solution will have debug = false.
+30.) Release solution will have customerrors = on.

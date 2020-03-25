@@ -1,0 +1,15 @@
+C:\MyProjects\LV2\trunk\src\LovRubWeb\LovRubWeb\bin\LovRubWeb.dll
+C:\MyProjects\LV2\trunk\src\LovRubWeb\LovRubWeb\bin\LovRubWeb.pdb
+C:\MyProjects\LV2\trunk\src\LovRubWeb\LovRubWeb\obj\Debug\ResolveAssemblyReference.cache
+C:\MyProjects\LV2\trunk\src\LovRubWeb\LovRubWeb\obj\Debug\LovRubWeb.dll
+C:\MyProjects\LV2\trunk\src\LovRubWeb\LovRubWeb\obj\Debug\LovRubWeb.pdb
+C:\LV3\trunk\src\LovRubWeb\LovRubWeb\bin\LovRubWeb.dll
+C:\LV3\trunk\src\LovRubWeb\LovRubWeb\bin\LovRubWeb.pdb
+C:\LV3\trunk\src\LovRubWeb\LovRubWeb\obj\Debug\ResolveAssemblyReference.cache
+C:\LV3\trunk\src\LovRubWeb\LovRubWeb\obj\Debug\LovRubWeb.dll
+C:\LV3\trunk\src\LovRubWeb\LovRubWeb\obj\Debug\LovRubWeb.pdb
+C:\LRW3\LovRubWeb\bin\LovRubWeb.dll
+C:\LRW3\LovRubWeb\bin\LovRubWeb.pdb
+C:\LRW3\LovRubWeb\obj\Debug\ResolveAssemblyReference.cache
+C:\LRW3\LovRubWeb\obj\Debug\LovRubWeb.dll
+C:\LRW3\LovRubWeb\obj\Debug\LovRubWeb.pdb

@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="siteBase.master.cs" Inherits="LovRubWeb.siteBase" %>
+<%@ Register Src="~/Controls/WebParts/Polaroids.ascx" TagName="Polaroids" TagPrefix="uc2" %>
+<%@ Register Src="~/Controls/WebParts/Footer.ascx" TagName="Footer" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>LovRub Sexual Enhancement Gel with Aloe Vera</title>
+	<!-- <link href="~/styles/global.css" type="text/css" media="screen" rel="stylesheet" /> -->
+	<!--[if IE]>
+        <link href="/styles/IE.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <script type="text/javascript" src="/js/swfobject.js"></script>
+    <!-- Added meta tags 07/03/09 -->
+    <meta name="description" content="LovRub.com - Male & Female Personal Lubricants, Sexual Enhancement Gels, LipLov Oral Stimulators, Massage Gels"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Sexual Enhancement, Personal Lubricant, sexual enhancement cream" />
+    <meta name="keywords" content="sexual stimulation, sexual lubricant" />
+    <meta name="keywords" content="l-arginine, larginine" />
+    <meta name="keywords" content="sex lotion, Massage Gel" />  
+    <meta name="keywords" content="male lubricant, female lubricant, sex lubricant, clit lubricant, women lubricant" />
+    <meta name="keywords" content="sex cream, sex gel, clitoris cream" />
+
+    <!-- Added by Tim for Contest Ad 04/24/09-->
+    <!--
+    <script type="text/javascript" src="turn/jquery.min.js"></script>
+    <script type="text/javascript" src="turn/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="turn/turn.js"></script>
+    <link rel="stylesheet" href="turn/turn.css"/>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('#target').fold(
+            {
+            side: 'left',
+            turnImage: 'fold.png',
+            maxHeight:'700',
+            startingWidth: 140,
+            startingHeight: 140,
+            autoCurl: 'true'
+            });
+        });
+    </script>
+    <!-- End Added by Tim for Contest Ad-->
+    -->
+</head>
+<body>
+    
+    <!-- Added by Tim for Contest Ad 04/24/09-->
+    <!-- <a href="http://www.lovrubpromotions.com" target="_blank"> -->
+    <!-- <img id="target" alt="" src="turn/code.png"/></a> -->
+    <!-- End Added by Tim for Contest Ad 04/24/09-->
+    
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+    <div class="sticker"></div>
+	<div class="masterwrapper">
+        <asp:ContentPlaceHolder ID="cphMastHead" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="cphMainMenu" runat="server">
+        </asp:ContentPlaceHolder>
+		<div class="wrapperheader">
+			<div class="wrapperfooter">
+                <asp:ContentPlaceHolder ID="cphPolaroid" runat="server">
+                </asp:ContentPlaceHolder>
+                <uc2:Polaroids id="Polaroids1" runat="server">
+                </uc2:Polaroids>
+                <div class="leftcol">
+                    
+					
+                    <asp:ContentPlaceHolder ID="cphSubMenu" runat="server">
+                    </asp:ContentPlaceHolder>
+				</div>
+                <asp:ContentPlaceHolder ID="cphContent" runat="server">
+                </asp:ContentPlaceHolder>
+				
+				<%--<div class="rightcol lgphoto" style="background-image: url(images/prod01-large.jpg); height: 499px;">
+
+				</div>--%>
+				
+			</div>
+		</div>
+	</div>
+	<div class="footerwrapper">
+		<uc1:Footer id="Footer1" runat="server"></uc1:Footer>
+	</div>
+    </form>
+
+<script type="text/javascript" src="~/js/Silverlight.js"></script>
+
+ <script type="text/javascript">
+    ////////////////////////////////////////////////////////////////// // get major Silverlight version 
+    // Return values: 
+    // 0 -> Silverlight not installed (at least not properly). 
+    // 1 -> Silverlight 1 installed 
+    // 2-> Silverlight 2 installed 
+    // 2-> Silverlight 3 installed 
+    ////////////////////////////////////////////////////////////////// 
+    getSilverlightVersion = function() 
+    { 
+    var SLVersion = 'NA'; 
+    document.write("my first ");
+    try {   
+           try 
+           {
+            var control = new ActiveXObject('AgControl.AgControl'); 
+       
+            if (control.IsVersionSupported("3.0"))                 
+               SLVersion = 3;             
+            else 
+            if (control.IsVersionSupported("2.0"))                
+               SLVersion = 2;
+            else 
+               SLVersion = 1;            
+       
+            control = null;       
+          } 
+          catch (e) 
+          {       
+             var plugin = navigator.plugins["Silverlight Plug-In"]; 
+             if (plugin) 
+             {          
+               if (plugin.description === "1.0.30226.2")              
+                  SLVersion = 2;
+               else 
+                  SLVersion = parseInt(plugin.description[0]); 
+             } 
+             else 
+               SLVersion = 0; 
+          } 
+    } 
+    catch (e) 
+    {  
+        SLVersion = 0; 
+    } 
+    
+    return SLVersion; 
+    }
+</script> 
+    
+<!-- KPL New version of tracking code. -->
+ <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-2336097-2");
+    pageTracker._initData();
+    pageTracker._trackPageview();   
+    pageTracker._setVar('SLVersion ' + getSilverlightVersion() ); 
+</script>
+<!-- KPL End New version of tracking code. -->    
+</body>
+</html>

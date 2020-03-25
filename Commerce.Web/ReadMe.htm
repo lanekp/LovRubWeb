@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>
+	dashCommerce 2.2.0 - Quantity Discount Patch
+</title>
+</head>
+<body>
+<form>
+
+<div style="padding:25px; padding-bottom:10px; font-family:Tahoma, Arial, Helvetica; font-size:12px; color: #000000; font-weight: bold; border: solid; border-width: 1px; border:1px solid #cc0202; background-color:#FEEFEE;">
+    <b style="font-size:20px;">
+        <img src="http://demo.dashcommerce.org/images/logo_dashcommerce_small.gif" style="padding:1px; vertical-align:middle; border:1px solid #cc0202;" />&nbsp;&nbsp;dashCommerce 2.2.0 - Quantity Discount Patch
+    </b>
+    <br />
+    <p style="font-size:10px;">
+        1 - Copy Commerce.Web to your root<br />
+        2 - Drag the content of the <a style="color:#cc0202; text-decoration:underline;">dashCommerce-2.2.0-QtyDiscount-Patch.zip</a> in Commerce.Web folder<br />
+        3 - Allow Read Write (ASPNET or NETWORK SERVICE)<br />
+        4 - Complete the wizard Install/Install.aspx<br />
+        5 - Run QtyDiscount.sql file manually<br />
+        6 - Run the website... Click the first add on the home page of the website and see the discount<br />
+        7 - Your done.... check the apple notebook qty discount<br />
+        <br />
+        note: discount are applied as money or percentage<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a Qty-Discount tab is available in Admin/Admin_Product_Details.aspx<br />
+    </p>
+    <hr style="height:1px; color:#cc0202;" /><br />
+    <table>
+        <tr>
+            <td style="width:400px; font-size:10px; vertical-align:top;">
+                Database Modified :<br /><br />
+                Added attributesPrice money to CSK_Store_Product Table<br />
+            </td>
+            <td style="width:50px;">&nbsp;</td>
+            <td style="width:400px; font-size:10px; vertical-align:top;">
+                Database Added :<br /><br />
+                Added CSK_Store_Product_QtyDiscount_Get Procedure<br />
+                Added CSK_Store_Product_QtyDiscount_GetByProductID Procedure<br />
+                Added CSK_Store_AddItemToCart_QtyDiscount Procedure<br />
+                <br />
+                Added CSK_Store_Product_QtyDiscount Table<br />
+                <div style="padding-left:10px; padding-top:5px;">
+                    Field discountID int<br />
+                    Field productID int<br />
+                    Field quantity int<br />
+                    Field discount numeric<br />
+                    Field isPrecent bit<br />
+                    Field isActive bit<br />
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br /><hr style="height:1px; color:#cc0202;" /><br />
+    <table>
+        <tr>
+            <td style="width:400px; font-size:10px; vertical-align:top;">
+                File Modified :<br /><br />
+                Admin/Admin_Product_Details.aspx<br />
+                Admin/Admin_Product_Details.aspx.cs<br /><br />
+                App_Code/BusinessLogic/OrderController.cs<br /><br />
+                App_Code/DataAccess/Store/Generated/OrderItem.cs<br />
+                Modules/Product/ProductTopDisplay.ascx.cs<br /><br />
+                Product.aspx.cs<br />
+                Product.aspx
+            </td>
+            <td style="width:50px;">&nbsp;</td>
+            <td style="width:400px; font-size:10px; vertical-align:top;">
+                File Added :<br /><br />
+                App_Code/BusinessLogic/QtyDiscountController.cs<br /><br />
+                App_Code/DataAccess/Store/Generated/QtyDiscount.cs<br />
+                App_Code/DataAccess/Store/QtyDiscount.cs<br />
+                App_Code/DataAccess/Store/DiscountDisplay.cs<br /><br />
+                images/icons/restore.gif<br /><br />
+                Install/InstallScripts/QtyDiscount.sql<br /><br />
+                Modules/Product/ProductQtyDiscounts.asc<br />
+                Modules/Product/ProductQtyDiscounts.asc.cs
+            </td>
+        </tr>
+    </table>
+    <br />
+</div>
+</form>
+</body>
+</html>

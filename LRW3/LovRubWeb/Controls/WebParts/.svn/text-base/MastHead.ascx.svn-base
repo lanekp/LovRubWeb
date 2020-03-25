@@ -1,0 +1,5 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MastHead.ascx.cs" Inherits="LovRubWeb.Controls.WebParts.MastHead" %>
+<div class="masthead">
+	<a href="/" class="logonorm" title="LovRub - his/her's sexual stimulation gel"></a>
+	<a href="/Wholesalers.aspx" class="wholesalerslink" title="Wholesalers buy LovRub">Wholesalers</a>
+</div>

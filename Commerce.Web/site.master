@@ -1,0 +1,92 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+  <title>LovRub Sexual Enhancement Gel with Aloe Vera</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link id="Link1" rel="stylesheet" type="text/css" href='~/js/modal/subModal.css'
+    runat="server" />
+  <meta name="description" content="Sexual Enhancment Personal Lubricant Cream for Men & Women" />
+  <meta name="keywords" content="clit stimulation, clitoris stimulator, clitoris stimulation" />
+  <meta name="keywords" content="l-arginine, larginine, penis stimulation cream" />
+  <meta name="keywords" content="sex lotion" />  
+  <meta name="keywords" content="personal lubricant, female lubricant, sex lubricant, clit lubricant, women lubricant, Vagina lubricant, Vagina lube" />
+  <meta name="keywords" content="sex cream, clitoris cream, sexual enhancement cream" />
+  <meta name="keywords" content="sexual products" />  
+  <meta name="keywords" content="sexual enhancement gel, sex gel, clit gel, vagina gel" />
+  
+</head>
+<body>
+
+<form id="elForm" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" /> 
+
+    <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+    </asp:contentplaceholder>
+<table width="733" bgcolor="black" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td colspan="14" align="center"><img src="images/BlackLineSpacer.gif" alt="" /></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="LRProducts2.aspx"><img src="images/ftrProductsUnselected.gif" width="72" height="26" border="0" id="index_r13_c2" alt="" /></a>
+            </td>
+           <td><a href="reviews.aspx"><img src="images/ftrReviews.gif" width="121" height="26" border="0" id="index_r13_c4" alt="" /></a></td>
+           <td><a href="faq.aspx"><img src="images/ftrFAQ.gif" width="51" height="26" border="0" id="index_r13_c6" alt="" /></a></td>
+           <td><a href="LRProducts2.aspx"><img src="images/ftrOrderNow.gif" width="90" height="26" border="0" id="index_r13_c7" alt="" /></a></td>
+           <td><a href="HowItWorks.aspx"><img src="images/ftrHowItWorks.gif" width="107" height="26" border="0" id="index_r13_c11" alt="" /></a></td>
+           <td><a href="about.htm"><img src="images/ftrAboutUs.gif" width="78" height="26" border="0" id="index_r13_c13" alt="" /></a></td>
+           <td><a href="about.htm"><img src="images/ftrContactUs.gif" width="80" height="26" border="0" id="index_r13_c14" alt="" /></a></td>
+        </tr>
+    <tr>
+        <td colspan="2" valign="middle" align="center" style="height:141px">
+            <a href="http://www.rapidssl.com" target="_blank">
+                <img src="images/rapidssl_ssl_certificate.gif" align="absMiddle" alt="Official RapidSSL Seal"/>
+            </a>
+        </td>                
+        <td  colspan="3" valign="middle" align="center" style="height: 141px"><img src="images/CreditCards.gif" alt=""/></td>
+        <td  colspan="2" valign="middle" align="center" style="height: 141px">
+            <div class="AuthorizeNetSeal"> 
+                <script type="text/javascript" language="javascript">
+                    var ANS_customer_id="eeb314ba-c23a-48e3-8e45-32bd3b3a794c";
+                </script> 
+                <script type="text/javascript" language="javascript" src="//VERIFY.AUTHORIZE.NET/anetseal/seal.js" >
+                    function Img3_onclick() { }
+                </script>
+                <a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">Credit Card Processing</a> 
+            </div> 
+        </td>
+    </tr>
+        <tr >
+            <td align="center" colspan="80">
+                <span class="disclaimer"> 
+                    Individual results may vary. 
+                    These statements have not been evaluated by the Food and Drug Administration. <br />
+                    This product is not intended to diagnose, treat, cure, or prevent any disease. 
+                </span>                    
+            </td>
+        </tr>
+    </table>
+
+    
+</form>
+
+<!-- <div id="footer"> -->
+<!-- </div> -->
+
+<!-- New version of tracking code. Added 04/29/08 -->
+ <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-2336097-2");
+    pageTracker._initData();
+    pageTracker._trackPageview();   
+</script>
+<!-- End New version of tracking code. Added 04/29/08 -->
+  
+</body>
+</html>

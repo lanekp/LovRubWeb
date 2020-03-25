@@ -1,0 +1,194 @@
+﻿html { margin: 0px; padding: 0px; }
+
+body {
+	padding: 0px;
+	color: #4a4d5c;
+	background: #f5f5f5;
+	font: .7em Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* basic selectors */
+a:link { color: #000000; text-decoration:none}
+a:visited { color: #000000;  text-decoration:none}
+a:active, a:hover { color: #cccccc;  text-decoration:none}
+
+h1 {
+	color: #5b626c;
+	font: bold 130% Verdana, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+	color: #5b626c;
+	font: bold 120% Verdana, Arial, Helvetica, sans-serif;
+}
+
+h3 {
+	color: #5b626c;
+	font: bold 110% Verdana, Arial, Helvetica, sans-serif;
+}
+
+h4 {
+	color: #5b626c;
+	font: bold 100% Verdana, Arial, Helvetica, sans-serif;
+}
+
+h5 {
+	color: #000;
+	font: bold 100% Verdana, Arial, Helvetica, sans-serif;
+}
+
+h6 {
+	color: #000;
+	font: bold italic 100% Verdana, Arial, Helvetica, sans-serif;
+}
+
+img { border: 0px; }
+hr { color: #ccc; height: 1px; }
+input, textarea, select { font: 100% Verdana, Arial, Helvetica, sans-serif; border:1px solid #666666;}
+
+#logobox
+{
+    margin-left:10px;
+    margin-top:10px;
+}
+
+#bodywrapper
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: White;
+    border: 1px solid #b2b2b2;
+}
+#leftcontent 
+{
+    position: absolute;
+    top:60px;
+    left:20px;
+    width:160px;
+    background:#fff;
+    border:1px dashed red;
+
+}
+
+#rightcontent {
+	position: absolute;
+	right:10px;
+	top:70px;
+	width:180px;
+	background:#fff;
+	margin-right:20px;
+	border:1px dashed orange;
+
+	}
+#centercontent 
+{
+	margin-top:5px;
+	background:#fff;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	margin-left: 175px;
+	margin-right:200px;
+	border:1px dashed yellow;
+
+	}
+html>body #centercontent {
+	margin-left: 175px;
+	margin-right:200px;
+}
+#globalmenu
+{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+#headmenu { /* styles for section or tab menu */
+	position: absolute;
+	top: -18px;
+	left: 200px;
+	width: 500px;
+}
+	html>body #headmenu {
+		position: relative; /* Necessary for menu to position in Opera */
+	}
+	#headmenu ul { list-style: none; padding: 0px; margin: 0px; }
+	#headmenu li { display: inline; }
+	#headmenu li a:link, #headmenu li a:visited { 
+		display: block;
+		float: left;
+		margin-right: 1px;
+		width: 116px;
+		height: 27px;
+		color: #737685; 
+		font-weight: bold;
+		text-decoration: none; 
+		text-align: center;
+		padding-top: 6px;
+		/* box model hack */
+		voice-family: "\"}\"";
+		voice-family:inherit;
+		height: 21px;
+		width: 115px;
+		border-bottom:1px solid #b2b2b2;
+		border-top:1px solid #f5f5f5;
+		border-left:1px solid #f5f5f5;
+		border-right:1px solid #f5f5f5;
+	}
+	html>body #headmenu li a:link, html>body #headmenu li a:visited { width: 115px; height: 21px; }
+	#headmenu li a:active, #headmenu li a:hover, #headmenu li a.selected{
+		border-top:1px solid #cccccc;
+		border-left:1px solid #cccccc;
+		border-right:1px solid #cccccc;
+		border-bottom:1px solid #ffffff;
+		background:#fff;
+	}
+
+.menulink
+{
+    margin-left:10px;
+}
+.menulink a
+{
+    color:#666666;
+}
+
+.browsebox
+{
+    padding:10px;   
+}
+.browsebox h1
+{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 12px;
+    color: #666666;
+    border-bottom: 1px dashed #cccccc;
+}
+
+.cartbox1 {
+	background: url('images/specialboxbg.gif') repeat-y;
+	width: 180px;
+}
+
+.cartbox2 {
+	background: url('images/specialboxtop.gif') no-repeat top left;
+	width: 180px;
+}
+
+.cartbox3 {
+	background: url('images/specialboxbottom.gif') no-repeat bottom left;
+	width: 180px;
+}
+.cartbox
+{
+    padding: 0px 20px 10px 20px;
+}
+.cartbox h1
+{
+	font-size: 12px;
+	font-weight:bold;
+	color:#b22222;
+	padding: 18px 10px 4px 10px;
+	margin: 0px;
+}

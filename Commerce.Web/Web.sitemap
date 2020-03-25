@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/default.aspx" title="LovRub Home Page"  description="LovRub Sexual Enhancement Gel for Men and Women">
+        <siteMapNode url="~/LRProducts2.aspx" title="LovRub Products"  description="LovRub Sexual Enhancement Gel for Men and Women"/>
+        <siteMapNode url="~/faq.aspx" title="LovRub FAQ"  description="LovRub FAQ"/>
+        <siteMapNode url="~/reviews.aspx" title="LovRub Product Reviews"  description="LovRub Product Reviews"/>
+        <siteMapNode url="~/HowItWorks.aspx" title="How LovRub Works"  description="How LovRub Works"/>
+        <siteMapNode url="~/about.htm" title="About Us"  description="About LovRub"/>
+    </siteMapNode>
+</siteMap>

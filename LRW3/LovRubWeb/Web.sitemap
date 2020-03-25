@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode title="LovRub Sexual Stimulation Gel" description="LovRub Sexual Stimulation Gel" url="~/">
+    <siteMapNode title="LovRub About Us" description="LovRub AboutUs" url="~/AboutUs.aspx"/>
+    <siteMapNode title="View LovRub Cart" description="View LovRub Cart" url="~/BasketLV3.aspx"/>
+    <siteMapNode title="LovRub ContactUs" description="LovRub Contact Us" url="~/ContactUs.aspx"/>
+    <siteMapNode title="LovRub Home Page" description="LovRub Home Page" url="~/Default.aspx"/>
+    <siteMapNode title="LovRub FAQ" description="LovRub FAQ" url="~/FAQ.aspx"/>
+    <siteMapNode title="LovRub HottestNews" description="LovRub HottestNews" url="~/HottestNews.aspx"/>
+    <siteMapNode title="LovRub HowItWorks" description="LovRub HowItWorks" url="~/HowItWorks.aspx"/>
+    <siteMapNode title="LovRub Ingredients" description="LovRub Ingredients" url="~/Ingredients.aspx"/>
+    <siteMapNode title="LovRub TeriTalk" description="LovRub TeriTalk" url="~/TeriTalk.aspx"/>
+    <siteMapNode title="LovRub Testimonials" description="LovRub Testimonials" url="~/Testimonials.aspx"/>
+    <siteMapNode title="LovRub Wholesalers" description="LovRub Wholesalers" url="~/Wholesalers.aspx"/>
+    <siteMapNode title="LovRub Products" description="LovRub Products" url="~/Products/">
+      <siteMapNode title="LovRub Body Massage" description="LovRub BodyMassage" url="~/Products/BodyMassage.aspx"/>
+      <siteMapNode title="LovRub Products Page" description="LovRub Products Page" url="~/Products/Default.aspx"/>
+      <siteMapNode title="LovRub for Her" description="LovRub for Her" url="~/Products/Hers.aspx"/>
+      <siteMapNode title="LovRub for Him" description="LovRub for Him" url="~/Products/His.aspx"/>
+      <siteMapNode title="LovRub Seasonal and Gift Products Page" description="LovRub Seasonal and Gift Products Page" url="~/Products/Seasonal.aspx"/>
+    </siteMapNode>
+    <siteMapNode title="LovRub Videos" description="Sexy LovRub Commercials and Videos" url="~/Videos/">
+      <siteMapNode title="LovRub Videos Home" description="Sexy LovRub Commercial" url="~/Videos/Default.aspx"/>
+      <siteMapNode title="LovRub Video2" description="Sexy LovRub Commercial" url="~/Videos/Video2.aspx"/>
+      <siteMapNode title="LovRub Video3" description="Sexy LovRub Commercial" url="~/Videos/Video3.aspx"/>
+      <siteMapNode title="LovRub Video4" description="Sexy LovRub Commercial" url="~/Videos/Video4.aspx"/>
+      <siteMapNode title="LovRub Video6" description="Sexy LovRub Commercial" url="~/Videos/Video6.aspx"/>
+      <siteMapNode title="LovRub Video7" description="Sexy LovRub Commercial" url="~/Videos/Video7.aspx"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

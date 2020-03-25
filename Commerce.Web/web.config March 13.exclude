@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<!-- 
+    Note: As an alternative to hand editing this file you can use the 
+    web admin tool to configure settings for your application. Use
+    the Website->Asp.Net Configuration option in Visual Studio.
+    A full list of settings and comments can be found in 
+    machine.config.comments usually located in 
+    \Windows\Microsoft.Net\Framework\v2.x\Config 
+-->
+<configuration>
+	<configSections>
+		<section name="loggingConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.LoggingSettings, Microsoft.Practices.EnterpriseLibrary.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" requirePermission="false"/>
+		<section name="exceptionHandling" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Configuration.ExceptionHandlingSettings, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" requirePermission="false"/>
+		<section name="dataConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSettings, Microsoft.Practices.EnterpriseLibrary.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" requirePermission="false"/>
+		<section name="securityCryptographyConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.Configuration.CryptographySettings, Microsoft.Practices.EnterpriseLibrary.Security.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" requirePermission="false"/>
+		<section name="TaxService" type="Commerce.Providers.TaxServiceSection" allowDefinition="MachineToApplication" restartOnExternalChanges="true" requirePermission="false"/>
+		<section name="FulfillmentService" type="Commerce.Providers.FulfillmentServiceSection" allowDefinition="MachineToApplication" restartOnExternalChanges="true" requirePermission="false"/>
+		<section name="PaymentService" type="Commerce.Providers.PaymentServiceSection" allowDefinition="MachineToApplication" restartOnExternalChanges="true" requirePermission="false"/>
+		<section name="GeneralSettings" type="GeneralSettings" allowDefinition="MachineToApplication" restartOnExternalChanges="true" requirePermission="false"/>
+		<section name="PayPalProSettings" type="PayPalProSettings" allowDefinition="MachineToApplication" restartOnExternalChanges="true" requirePermission="false"/>
+		<section name="PayPalStandardSettings" type="PayPalStandardSettings" allowDefinition="MachineToApplication" restartOnExternalChanges="true" requirePermission="false"/>
+		<section name="SubSonicService" type="SubSonic.SubSonicSection, SubSonic" allowDefinition="MachineToApplication" restartOnExternalChanges="true" requirePermission="false"/>
+<!--  **************** KPL AJAX -->
+		<sectionGroup name="system.web.extensions" type="System.Web.Configuration.SystemWebExtensionsSectionGroup, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+			<sectionGroup name="scripting" type="System.Web.Configuration.ScriptingSectionGroup, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+				<section name="scriptResourceHandler" type="System.Web.Configuration.ScriptingScriptResourceHandlerSection, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" requirePermission="false" allowDefinition="MachineToApplication"/>
+				<sectionGroup name="webServices" type="System.Web.Configuration.ScriptingWebServicesSectionGroup, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					<section name="jsonSerialization" type="System.Web.Configuration.ScriptingJsonSerializationSection, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" requirePermission="false" allowDefinition="Everywhere"/>
+					<section name="profileService" type="System.Web.Configuration.ScriptingProfileServiceSection, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" requirePermission="false" allowDefinition="MachineToApplication"/>
+					<section name="authenticationService" type="System.Web.Configuration.ScriptingAuthenticationServiceSection, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" requirePermission="false" allowDefinition="MachineToApplication"/>
+				</sectionGroup>
+			</sectionGroup>
+		</sectionGroup>
+<!-- **************  KPL AJAX -->
+  </configSections>
+
+  <appSettings>
+  <add key="discountTitle" value="Our Price" />
+  <add key="discountDescription" value="Everyday Low Price" />
+  <add key="tagLine" value="LovRub Sexual Enhancement Gel with Aloe Vera" />
+  <add key="companyOrderIdentifier" value="HRock" />
+  <add key="defaultCurrency" value="USD" />
+  <add key="GoogleMerchantID" value="[VENDORID]" />
+  <add key="GoogleMerchantKey" value="[MERCHANT KEY]" />
+  <add key="GoogleEnvironment" value="Sandbox" />
+  <add key="PayPalSvc.PayPalSvc" value="https://api.sandbox.paypal.com/2.0/" />
+  <add key="StrikeIron.TaxDataBasic4" value="http://ws.strikeiron.com/StrikeIron/TaxDataBasic4/TaxDataBasic" />
+ </appSettings>
+	<!--
+  templateDirectory   - you can override the generated code template by creating your own. See the 
+                        samples in the Dev directory. This needs to be an absolute link.
+  
+  generatedNamespance - if you don't want to use the Global, specify it here
+  spClassName         - use your own class name for SPs. The defaul is "SPs"
+  fixPluralClassNames - If you have pluralized tables and you want singular, set this here.
+  -->
+	<SubSonicService defaultProvider="ELib2DataProvider">
+		<providers>
+			<add name="ELib2DataProvider" type="SubSonic.ELib2DataProvider, SubSonic" connectionStringName="CommerceTemplate"/>
+		</providers>
+	</SubSonicService>
+	<loggingConfiguration name="Logging Application Block" tracingEnabled="true" defaultCategory="General" logWarningsWhenNoCategoriesMatch="true">
+		<listeners>
+			<add databaseInstanceName="lvDC220" writeLogStoredProcName="WriteLog" addCategoryStoredProcName="AddCategory" formatter="Text Formatter" listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Database.Configuration.FormattedDatabaseTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging.Database, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" traceOutputOptions="None" type="Microsoft.Practices.EnterpriseLibrary.Logging.Database.FormattedDatabaseTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging.Database, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" name="Database Trace Listener"/>
+		</listeners>
+		<formatters>
+			<add template="Timestamp: {timestamp}&#xA;Message: {message}&#xA;Category: {category}&#xA;Priority: {priority}&#xA;EventId: {eventid}&#xA;Severity: {severity}&#xA;Title:{title}&#xA;Machine: {machine}&#xA;Application Domain: {appDomain}&#xA;Process Id: {processId}&#xA;Process Name: {processName}&#xA;Win32 Thread Id: {win32ThreadId}&#xA;Thread Name: {threadName}&#xA;Extended Properties: {dictionary({key} - {value}&#xA;)}" type="Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter, Microsoft.Practices.EnterpriseLibrary.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" name="Text Formatter"/>
+		</formatters>
+		<categorySources>
+			<add switchValue="All" name="General">
+				<listeners>
+					<add name="Database Trace Listener"/>
+				</listeners>
+			</add>
+			<add switchValue="Warning" name="Exception">
+				<listeners>
+					<add name="Database Trace Listener"/>
+				</listeners>
+			</add>
+		</categorySources>
+		<specialSources>
+			<allEvents switchValue="All" name="All Events"/>
+			<notProcessed switchValue="All" name="Unprocessed Category"/>
+			<errors switchValue="All" name="Logging Errors &amp; Warnings">
+				<listeners>
+					<add name="Database Trace Listener"/>
+				</listeners>
+			</errors>
+		</specialSources>
+	</loggingConfiguration>
+	<exceptionHandling>
+		<exceptionPolicies>
+			<add name="Application Exception">
+				<exceptionTypes>
+					<add type="System.Exception, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" postHandlingAction="NotifyRethrow" name="Exception">
+						<exceptionHandlers>
+							<add logCategory="Exception" eventId="100" severity="Warning" title="Enterprise Library Exception Handling" formatterType="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.TextExceptionFormatter, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" priority="1" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" name="Logging Handler"/>
+						</exceptionHandlers>
+					</add>
+				</exceptionTypes>
+			</add>
+		</exceptionPolicies>
+	</exceptionHandling>
+	<dataConfiguration defaultDatabase="CommerceTemplate"/>
+	<!--################################ Connection Strings ################################################-->
+	<!--DONOTREMOVE-->
+	<connectionStrings>
+  <clear />
+    <!-- KPL LAPTOP SETTINGS -->
+    <add name="CommerceTemplate"
+         connectionString="Server=localhost;Initial Catalog=lvDC220;Integrated Security=true;"
+         providerName="System.Data.SqlClient" />
+    
+    <!-- KPL PRODUCTION SETTINGS-->
+    <!--
+    <add name="CommerceTemplate" 
+       connectionString="Data Source=72.52.194.183; initial catalog=lvDC220; user ID=lanekp; password=caralexa12" 
+       providerName="System.Data.SqlClient" />
+    -->       
+</connectionStrings>
+<!--/DONOTREMOVE-->
+	<!--####################################################################################################-->
+	<securityCryptographyConfiguration>
+		<hashProviders>
+			<add algorithmType="System.Security.Cryptography.SHA1Managed, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" saltEnabled="true" type="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.HashAlgorithmProvider, Microsoft.Practices.EnterpriseLibrary.Security.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" name="SHA1Managed"/>
+		</hashProviders>
+		<symmetricCryptoProviders>
+			<add scope="CurrentUser" type="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.DpapiSymmetricCryptoProvider, Microsoft.Practices.EnterpriseLibrary.Security.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" name="DPAPI Symmetric Cryptography Provider"/>
+		</symmetricCryptoProviders>
+	</securityCryptographyConfiguration>
+	<!--
+  test key (Thanks Dave!)
+  you can get a free key for testing by registering at
+  strike iron. You can put you user/pass here, or a registration key
+  -->
+	<TaxService defaultProvider="StrikeIronTaxProvider">
+    <providers>
+     <clear />
+     <add serviceKey="954B049B97ACB29FBACA" 
+          name="StrikeIronTaxProvider"
+          type="Commerce.Providers.StrikeIronTaxProvider" />
+    </providers>
+   </TaxService>
+	<GeneralSettings currencyCode="USD" loginRequirement="never" />
+	<PayPalProSettings apiUserName="chrisc_1183819815_biz_api1.yahoo.com" apiPassword="1183819821" signature="AMOkqEmVSK9-K8-UdXbZkJqpuq-nAZevwFmjBlUXi06dqreQzWhAD3P4" isActive="true" isLive="false"/>
+	<PayPalStandardSettings isActive="false" useSandbox="true" businessEmail="business@csk.com" PDTID="4wscjERBD3ik_E7hmrqVaXHilJTCegrJ5FJogluERPo8H9ixPskOmFXuQK8"/>
+	
+  <FulfillmentService defaultProvider="SimpleShippingProvider"
+                      useShipping="false"
+                      dimensionUnit="inches"
+                      shipFromZip="11742"
+                      shipFromCountryCode="US"
+                      shipPackagingBuffer="1">
+    <providers>
+     <clear />
+     <add connectionStringName="CommerceTemplate" name="SimpleShippingProvider"
+      type="Commerce.Providers.SimpleShippingProvider" />
+    </providers>
+ </FulfillmentService>
+
+  <PaymentService acceptCreditCards="true" defaultProvider="AuthorizeNetPaymentProvider">
+  <providers>
+   <clear />
+   <add serviceUserName="4S2pYS93zr"
+        servicePassword="authnet101"
+        transactionKey="4ey2PrC37ERy97Hg"
+        serverURL="https://secure.authorize.net/gateway/transact.dll"
+        currencyCode="USD"
+        name="AuthorizeNetPaymentProvider"
+        type="Commerce.Providers.AuthorizeNetPaymentProvider" />
+
+  </providers>
+ </PaymentService> 
+
+  <system.web>
+		<!--
+		<trust level="dashCommerce_Medium_Trust" originUrl=".*"  />
+		-->
+
+    <httpHandlers>
+      <!--****************** KPL AJAX -->
+      <add verb="*" path="*_AppService.axd" validate="false" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+      <add verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" validate="false"/>
+      <!--****************** KPL AJAX -->
+			<remove verb="*" path="*.asmx"/>
+      <add verb="*" path="*.asmx" validate="false" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+			<!-- <add verb="*" path="*.asmx" type="Microsoft.Web.Services.ScriptHandlerFactory" validate="false"/> -->
+			<!--
+          The MultiRequestHandler enables multiple requests to be handled in one
+          roundtrip to the server. Its use requires Full Trust.
+      -->
+      <!-- KPL commented out ATLAS stuff -->
+			<!--
+         <add verb="*" path="atlasbatchcall.axd" type="Microsoft.Web.Services.MultiRequestHandler" validate="false"/>
+			   <add verb="*" path="atlasglob.axd" type="Microsoft.Web.Globalization.GlobalizationHandler" validate="false"/>
+      -->            
+			<!--
+          The IFrameHandler enables a limited form of cross-domain calls to 'Atlas' web services.
+          This should only be enabled if you need this functionality and you're willing to expose
+          the data publicly on the Internet.
+          To use it, you will also need to add the attribute [WebOperation(true, ResponseFormatMode.Json, true)]
+          on the methods that you want to be called cross-domain.
+          This attribute is by default on any DataService's GetData method.
+          
+      <add verb="*" path="iframecall.axd" type="Microsoft.Web.Services.IFrameHandler" validate="false"/>
+      -->
+			<add verb="*" path="*.asbx" type="Microsoft.Web.Services.ScriptHandlerFactory" validate="false"/>
+		</httpHandlers>
+		<httpModules>
+      <add name="ScriptModule" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+			<add name="MagicAjax" type="MagicAjax.MagicAjaxModule, MagicAjax"/>
+			<!-- ORIG B4 AJAX <add name="ScriptModule" type="Microsoft.Web.Services.ScriptModule"/> -->
+			<add name="BridgeModule" type="Microsoft.Web.Services.BridgeModule"/>
+			<add name="WebResourceCompression" type="Microsoft.Web.Services.WebResourceCompressionModule"/>
+		</httpModules>
+		<globalization requestEncoding="utf-8" responseEncoding="utf-8" fileEncoding="utf-8" culture="auto:en-US" uiCulture="auto:en"/>
+		<roleManager enabled="true">
+			<providers>
+				<clear/>
+				<add name="AspNetSqlRoleProvider" connectionStringName="CommerceTemplate" applicationName="dashCommerce" type="System.Web.Security.SqlRoleProvider"/>
+			</providers>
+		</roleManager>
+		<membership defaultProvider="AspNetSqlMembershipProvider" userIsOnlineTimeWindow="15" hashAlgorithmType="">
+			<providers>
+				<clear/>
+				<add connectionStringName="CommerceTemplate" enablePasswordRetrieval="false" enablePasswordReset="true" requiresQuestionAndAnswer="true" applicationName="dashCommerce" requiresUniqueEmail="false" passwordFormat="Hashed" maxInvalidPasswordAttempts="5" passwordAttemptWindow="10" passwordStrengthRegularExpression="" minRequiredPasswordLength="4" minRequiredNonalphanumericCharacters="0" name="AspNetSqlMembershipProvider" type="System.Web.Security.SqlMembershipProvider, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+			</providers>
+		</membership>
+		<anonymousIdentification enabled="true"/>
+		<authentication mode="Forms">
+			<forms name=".ASPNET" loginUrl="login.aspx" protection="All" timeout="30" path="/"/>
+		</authentication>
+		<authorization>
+			<allow users="?"/>
+		</authorization>
+		<profile automaticSaveEnabled="true" defaultProvider="SqlProvider">
+			<providers>
+				<clear/>
+				<add name="SqlProvider" type="System.Web.Profile.SqlProfileProvider" connectionStringName="CommerceTemplate" applicationName="dashCommerce"/>
+			</providers>
+			<properties>
+				<add name="LastShippingAddress" type="Commerce.Common.Address" allowAnonymous="true"/>
+				<add name="LastBillingAddress" type="Commerce.Common.Address" allowAnonymous="true"/>
+				<add name="FullName" type="System.String" allowAnonymous="true"/>
+				<add name="CurrentOrderTax" type="System.Decimal" allowAnonymous="true"/>
+				<add name="CurrentOrderShipping" type="System.Decimal" allowAnonymous="true"/>
+				<add name="CurrentOrderShippingMethod" type="System.String" allowAnonymous="true"/>
+			</properties>
+		</profile>
+		<!-- 
+            Set compilation debug="true" to insert debugging 
+            symbols into the compiled page. Because this 
+            affects performance, set this value to true only 
+            during development.
+        -->
+    
+    <compilation debug="true">
+			<buildProviders>
+				<add extension=".asbx" type="Microsoft.Web.Services.BridgeBuildProvider"/>
+			</buildProviders>
+			<assemblies>
+        <!--****************** KPL AJAX -->
+        <add assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+        <add assembly="System.Web.Extensions.Design, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+        <!--****************** KPL AJAX -->
+				<add assembly="System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+				<add assembly="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+				<add assembly="System.Management, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+				<add assembly="System.Configuration.Install, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+				<add assembly="System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+				<add assembly="System.Messaging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+				<add assembly="System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/></assemblies></compilation>
+		<!--
+            The <authentication> section enables configuration 
+            of the security authentication mode used by 
+            ASP.NET to identify an incoming user. 
+        -->
+		<!--
+            The <customErrors> section enables configuration 
+            of what to do if/when an unhandled error occurs 
+            during the execution of a request. Specifically, 
+            it enables developers to configure html error pages 
+            to be displayed in place of a error stack trace.
+        -->
+    <!-- added KPL 10/12/07-->
+    <customErrors mode="Off"/>
+    <!-- Commented out KPL 10/12/07
+     <customErrors mode="On">
+			<error statusCode="500" redirect="ExceptionPage.aspx"/>
+		</customErrors>
+      -->
+		<pages styleSheetTheme="Default">
+			<controls>
+        <!-- ************* KPL -->
+        <add tagPrefix="asp" namespace="System.Web.UI" assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>        
+        <!-- ************** KPL AJAX-->
+
+        <!-- KPL commented out ATLAS stuff-->
+        <!-- 
+        <add namespace="Microsoft.Web.UI" assembly="Microsoft.Web.Atlas" tagPrefix="atlas"/>
+				<add namespace="Microsoft.Web.UI.Controls" assembly="Microsoft.Web.Atlas" tagPrefix="atlas"/>
+        -->            
+
+      </controls>
+		</pages>
+	</system.web>
+  
+  <!-- ************* KPL AJAX -->
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false"/>
+    <modules>
+      <add name="ScriptModule" preCondition="integratedMode" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+    </modules>
+    <handlers>
+      <remove name="WebServiceHandlerFactory-Integrated"/>
+      <add name="ScriptHandlerFactory" verb="*" path="*.asmx" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+      <add name="ScriptHandlerFactoryAppServices" verb="*" path="*_AppService.axd" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+      <add name="ScriptResource" preCondition="integratedMode" verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+    </handlers>
+  </system.webServer>  
+  <!-- ************* KPL AJAX -->
+  
+	<system.net>
+		
+    <mailSettings>
+			<smtp deliveryMethod="Network" from="service@lovrub.com">
+				<network host="mail.ultimahosts.com" password="service1" port="25" userName="service@lovrub.com"/>
+			</smtp>
+		</mailSettings>
+    
+	</system.net>
+	<location path="imagepicker.aspx">
+		<system.web>
+			<authorization>
+				<allow roles="Administrator"/>
+				<deny users="*"/>
+			</authorization>
+		</system.web>
+	</location>
+</configuration>

@@ -1,0 +1,105 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="adminmaster" %>
+<%@ Register Src="Modules/CatalogList.ascx" TagName="CatalogList" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+	<link id="Link1" rel="stylesheet" type="text/css" href='~/js/modal/subModal.css'
+		runat="server" />
+    <link rel="stylesheet" type="text/css" href="~/Checkout.css" /> <!-- KPL 11/24/07 -->		
+</head>
+
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/modal/common.js")%>"></script>
+
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/modal/submodalsource.js")%>"></script>
+
+<body>
+	<form id="form2" runat="server">
+		<div id="logo">
+      <a href="http://www.dashcommerce.org" target="_blank"><img src="<%=Page.ResolveUrl("~/images/dash_commerce_logo.gif")%>" alt="dashCommerce Site Administration" /></a><br />
+			<span class="adminHeader">site administration</span>
+		</div>
+		<div style="height: 40px">
+			&nbsp;
+		</div>
+		<div id="leftcontent">
+			<table width="100%" bgcolor="gainsboro" cellpadding="3" cellspacing="1">
+				<tr>
+					<td bgcolor="whitesmoke" width="180" valign="top" style="padding-left: 10px">
+						<h5>
+							<img src="../images/icons/icon_dollar.gif" align="middle" />
+							Orders</h5>
+						<div class="adminNavLink">
+							<a href="admin_orders.aspx">Orders</a></div>
+						<div class="adminNavLink">
+							<a href="admin_campaigns.aspx">Campaigns</a></div>
+						<div class="adminNavLink">
+							<a href="admin_promos.aspx">Promos</a></div>
+						<div class="adminNavLink">
+							<a href="admin_bundles.aspx">Bundles</a></div>
+						<div class="adminNavLink">
+							<a href="admin_coupontypes.aspx">Coupon Types</a></div>
+						<div class="adminNavLink">
+							<a href="admin_coupons.aspx">Coupons</a></div>
+						<hr />
+						<h5>
+							<img src="../images/icons/icon_fav.gif" align="middle" />
+							Products</h5>
+						<div class="adminNavLink">
+							<a href="admin_products.aspx">Products</a></div>
+						<div class="adminNavLink">
+							<a href="admin_categories.aspx">Product Categories</a></div>
+						<div class="adminNavLink">
+							<a href="admin_manufacturers.aspx">Manufacturers</a></div>
+						<div class="adminNavLink">
+							<a href="admin_reviews.aspx">Product Reviews</a></div>
+						<hr />
+						<h5>
+							<img src="../images/icons/edit.gif" align="middle" />
+							Configuration</h5>
+						<div class="adminNavLink">
+							<a href="paymentconfiguration.aspx">Payment Configuration</a></div>
+						<div class="adminNavLink">
+							<a href="taxconfiguration.aspx">Tax Configuration</a></div>
+						<div class="adminNavLink">
+							<a href="shippingconfiguration.aspx">Shipping Configuration</a></div>
+						<div class="adminNavLink">
+							<a href="mailconfiguration.aspx">Mail Configuration</a></div>
+						<hr />
+						<h5>
+							<img src="../images/icons/users.gif" align="middle" />
+							Security</h5>
+						<div class="adminNavLink">
+							<a href="admin_users.aspx">Users</a></div>
+						<div class="adminNavLink">
+							<a href="admin_roles.aspx">Roles</a></div>
+						<div class="adminNavLink">
+							<a href="admin_mailers.aspx">Mailers</a></div>
+						<div class="adminNavLink">
+							<a href="admin_logs.aspx">Logs</a></div>
+						<br />
+						<br />
+						<div>
+							<img src="../images/icons/icon_exit.gif" align="middle" />
+							<a href="../default.aspx">
+								<h5>
+									Return To Site</h5>
+							</a>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<asp:ContentPlaceHolder ID="AdminPlaceHolder" runat="server">
+		</asp:ContentPlaceHolder>
+		<!--#INCLUDE FILE=includes/modal_divs.aspx-->
+	</form>
+</body>
+</html>
+
+<script>
+function popItScroll(theLink){ 
+	window.open(theLink,null,'height=800,width=700,scrollbars=yes,resizable=yes'); 
+	
+}
+</script>
+

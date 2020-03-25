@@ -1,0 +1,460 @@
+td img { display: block; }
+
+body { background-color: #000000; }
+
+.disclaimer /* Disclaimer font */
+{
+    color: #CCCCCC; font-size: 11px; font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*
+.loadingbox {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  border: 1px solid #CCCCCC;
+  background-color: #ffffff;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  padding-top: 20px;
+}
+*/
+.loadingbox {
+  border: 1px solid #CCCCCC;
+  background-color: #ffffff;
+  height: 50px;
+  width: 250px;
+  padding-top: 20px;
+}
+
+
+.prodReview /* Product Review font */
+{
+    font-size: 14px; 
+    /* 
+    color: #FFFFFF; 
+    font-family: Arial, Helvetica, sans-serif; 
+    */
+    font-family: Tahoma, sans-serif; /* KPL 12/17 */
+    color: #CCCCCC; 
+}
+
+.prodReview14Bold /* Product Review font */
+{
+    font-size: 15px; 
+    /* 
+    color: #FFFFFF; 
+    font-family: Arial, Helvetica, sans-serif; 
+    */
+    font-family: Tahoma, sans-serif; /* KPL 12/17 */
+    font-weight: bold;    
+    color: #CCCCCC; 
+}
+
+
+.prodReview14 /* Product Review font */
+{
+    font-size: 14px; 
+    /* 
+    color: #FFFFFF; 
+    font-family: Arial, Helvetica, sans-serif; 
+    */
+    font-family: Tahoma, sans-serif; /* KPL 12/17 */
+    color: #CCCCCC; 
+}
+
+.prodReview15 /* Product Review font */
+{
+    font-size: 14px; 
+    /* 
+    color: #FFFFFF; 
+    font-family: Arial, Helvetica, sans-serif; 
+    */
+    font-family: Tahoma, sans-serif; /* KPL 12/17 */
+    color: #CCCCCC; 
+}
+
+
+.faqParagraph 
+{
+    color: #CCCCCC; 
+    font-size: 13px; 
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Tahoma, sans-serif; /* KPL 12/17 */
+}
+
+
+.faqQA
+{	
+    color: #D70C8E;
+	font-weight: bold;
+}
+
+.defaultText 
+{
+    color: #CCCCCC; 
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Tahoma, Sans-Serif;
+    font-size: 15px; 
+    /* 
+    font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #FFFFFF;
+    */
+}
+
+.defaultTextBlack 
+{
+    color: #000000; /*  black */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Tahoma, Sans-Serif;
+    font-size: 15px; 
+    /* 
+    font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #FFFFFF;
+    */
+}
+
+.defaultText16
+{
+    color: #CCCCCC; 
+    font-family: Tahoma, Sans-Serif;
+    font-size: 16px; 
+/*    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; 
+	color: #FFFFFF;
+*/
+}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+/*********** delete these ************/
+.style1 {font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+/* default 'best sex ever' */
+.style2 {	color: #D50B8C;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* 12/01/07. from Lovrub5. Used in Products.htm */
+.style4 
+{
+    font-size: 15px; 
+    color: #B20838; 
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 12/15/07. from Lovrub5. Used in Products.htm for "LovRub for Women" */
+.style5 
+{
+    color: #D50B8C; /* Female Red */
+	font-size: 18px;
+}
+
+
+/* 12/01/07. from Lovrub5. Used in Products.htm for "LovRub for Men" */
+.style7 
+{
+    font-size: 18px; 
+    color: #B20838;  /* Male Red */
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.style9 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+/* default 'click here to order now */
+.style10 {
+	color: #B50839;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.style15 {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+
+.style14 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #D50B8C;
+	font-style: italic;
+}
+
+/* default 'click here for product reviews' */
+.style16 {
+	color: #CD0D88;
+	font-weight: bold;
+}
+/*********** delete these ************/
+
+
+.defClickProdReview 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-style: italic;
+	color: #CD0D88;
+	font-weight: bold;
+}
+
+.defaultBestSex
+{	color: #D50B8C;
+	font-style: italic;
+	font-weight: bold;
+}
+.defaultClickHere {
+	color: #B50839;
+	/* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Tahoma, sans-serif; /* KPL 12/17 */
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+.prodMaleBorder
+{
+    background-color: #B50839; /* Male Red */
+    padding-top:100px;
+}
+
+.prodFemaleBorder
+{
+    background-color: #D50B8C; /* Female Red */
+}
+
+.defaultClickHere17 {
+	color: #B50839;
+	/* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Tahoma, sans-serif; /* KPL 12/17 */
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.defaultClickHere20 {
+	color: #B50839;
+	/* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Tahoma, sans-serif; /* KPL 12/17 */
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+.defaultFemaleClickHere {
+	color: #D50B8C; /* Female Red */
+	/* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Tahoma, sans-serif; /* KPL 12/17 */
+	font-size: 17px;
+	font-weight: bold;
+}
+
+
+.defaultFemaleClickHere17 {
+	color: #D50B8C; /* Female Red */
+	/* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Tahoma, sans-serif; /* KPL 12/17 */
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.defaultFemaleClickHere20 {
+	color: #D50B8C; /* Female Red */
+	/* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Tahoma, sans-serif; /* KPL 12/17 */
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+.defaultFreeBottle {
+	color: #FFFFFF;
+	/* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Tahoma, sans-serif; /* KPL 12/17 */
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.maleRedLogo /* 12/15/07. Replaces 'style7' above. Lovrub5. Used in default.aspx for "LovRub for Men" */
+{
+    font-size: 19px; 
+    color: #B20838;  /* Male Red */
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+
+.maleRedLogoProduct /* 12/15/07. Replaces 'style7' above. Lovrub5. Used in default.aspx for "LovRub for Men" */
+{
+    font-size: 24px; 
+    color: #B20838;  /* Male Red */
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.productNameBasket /* 12/31/07 Used in basket.aspx page */
+{
+    font-size: 20px; 
+    color: #CCCCCC; 
+    font-weight: bold; 
+    /* color: #B20838;  */ /* Male Red */
+    /* font-family: Arial, Helvetica, sans-serif;  */
+    font-family: Tahoma, sans-serif;
+}
+
+
+
+.lrProdFemaleParagraph
+{
+    /* font-size: 15px; */
+    /* color: #B20838; */
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.femaleRedLogo /* 12/15/07. Replaces 'style5' above. Lovrub5. Used in default.aspx for "LovRub for women" */
+{
+    color: #D50B8C; /* Female Red */
+    font-size: 19px; 
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif; 
+	
+}
+
+.femaleRedLogoProduct
+{
+    color: #D50B8C; /* Female Red */
+    text-align:center;
+    font-size: 24px; 
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif; 
+	
+}
+
+/*****  END Tara's stuff ********************/
+
+h4 {
+  /* color: #5b626c; */
+  /* color: #FFFFFF; */
+  /* font: bold 100% Verdana, Arial, Helvetica, sans-serif; */
+  color: #CCCCCC;
+  font: bold 100% Tahoma, sans-serif;
+}
+
+.smalltext {
+  font-size: 8pt;
+  /* color: #666666; */
+  color: #FFFFFF;
+  font-family: verdana;
+}
+
+.smallTextBasket {
+  font-size: 12pt;
+  /* color: #666666; */
+  color: #FFFFFF;
+  /* color: #CCCCCC; */
+  font-family: verdana;
+}
+
+.smallTextBasket10 {
+  font-size: 10pt;
+  /* color: #666666; */
+  /* color: #FFFFFF; */
+  color: #CCCCCC;
+  font-family: verdana;
+}
+
+
+#centercontent {
+  margin-top: 60px;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  /* margin-left: 200px; */
+  /* margin-right: 205px; */
+  z-index: 100;
+}
+
+#leftcontent {
+  position: absolute;
+  top: 159px;
+  left: 10px;
+  width: 180px;
+  background: #fff;
+  z-index: 100;
+}
+
+#rightcontent {
+  position: absolute;
+  right: 5px;
+  top: 179px;
+  width: 180px;
+  background: #fff;
+  margin-right: 10px;
+  z-index: 100;
+}
+
+
+.coreboxbody {
+  background-image: url(images/core_box_bg.gif);
+  width: 140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Tahoma, sans-serif; /* KPL 12/31 */
+}
+
+.coreboxtop {
+  background-image: url(images/core_box_top.gif);
+  height: 22px;
+  width: 180px;
+}
+.coreboxbottom {
+  width: 180px;
+  background-image: url(images/core_box_bottom.gif);
+  height: 22px;
+}
+.coreboxheader {
+  width: 180px;
+  background-image: url(images/core_box_bg.gif);
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;    
+  font-family: Tahoma, sans-serif; /* KPL 12/31/07 */
+}
+
+.tenpixspacer {
+  height: 10px;
+}
+
+.twentypixspacer {
+  height: 20px;
+}
+

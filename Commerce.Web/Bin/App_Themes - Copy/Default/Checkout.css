@@ -1,0 +1,94 @@
+/********* FROM Tara's HTML PAGES 11/23/07 ***/
+td img {display: block;}body {
+	background-color: #000000;
+}
+
+.style1 {font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.style9 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+/*****  END Tara's stuff ********************/
+
+h4 {
+  /* color: #5b626c; */
+  color: #FFFFFF;
+  font: bold 100% Verdana, Arial, Helvetica, sans-serif;
+}
+
+.smalltext {
+  font-size: 8pt;
+  /* color: #666666; */
+  color: #FFFFFF;
+  font-family: verdana;
+}
+
+
+
+
+#centercontent {
+  margin-top: 60px;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  margin-left: 200px;
+  margin-right: 205px;
+  z-index: 100;
+}
+
+#leftcontent {
+  position: absolute;
+  top: 159px;
+  left: 10px;
+  width: 180px;
+  background: #fff;
+  z-index: 100;
+}
+
+#rightcontent {
+  position: absolute;
+  right: 5px;
+  top: 179px;
+  width: 180px;
+  background: #fff;
+  margin-right: 10px;
+  z-index: 100;
+}
+
+
+.coreboxbody {
+  background-image: url(images/core_box_bg.gif);
+  width: 140px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.coreboxtop {
+  background-image: url(images/core_box_top.gif);
+  height: 22px;
+  width: 180px;
+}
+.coreboxbottom {
+  width: 180px;
+  background-image: url(images/core_box_bottom.gif);
+  height: 22px;
+}
+.coreboxheader {
+  width: 180px;
+  background-image: url(images/core_box_bg.gif);
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.tenpixspacer {
+  height: 10px;
+}
+.twentypixspacer {
+  height: 20px;
+}
+

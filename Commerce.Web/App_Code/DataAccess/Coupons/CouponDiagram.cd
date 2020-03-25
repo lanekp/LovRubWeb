@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Commerce.Promotions.Coupon">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Coupon.cs</FileName>
+      <HashCode>gAAAQQAAAAgAKAhAABAAAAgCQAAIwAAICAAAAAAAAAg=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CouponType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Commerce.Promotions.CouponType">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Coupon.cs</FileName>
+      <HashCode>AAAQAAAAAQAiAAAEAAAAAAAAAAAAEQAAAAAAIAAAEkA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Commerce.Promotions.PercentOffCoupon">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PercentOffCoupon.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>
